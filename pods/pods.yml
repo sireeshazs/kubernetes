@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: sample2
-
+  name: sample2
 spec:
-container:
+   containers:
     - name: nginx
       image: nginx
     - name: debug
       image: centos:7
+
+      

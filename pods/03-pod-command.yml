@@ -13,5 +13,5 @@ spec:
     - name: ping
       image: sireeshazs/ping
       ## ARGS is nothing but overwriting CMD
-      args:
-        - "yahoo.com"
+    # args:
+      #  - "yahoo.com"

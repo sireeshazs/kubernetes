@@ -10,6 +10,6 @@ spec:
       - sleep
       - "100000"
     - name: ping
-      image: siri/zs-ping
+      image: sireeshazs/ping
       args:
         - "yahoo.com"

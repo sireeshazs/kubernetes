@@ -1,4 +1,4 @@
-#siri/zs-ping
+#sireesha/zs-ping
 FROM    centos:7
 ENTRYPOINT  ["ping"]
 CMD     ["google.com"]

@@ -9,6 +9,6 @@ spec:
       command:
       - sleep
       - "100000"
-     env:
-       - name: URL
-         value: google.com
+      env:
+        - name: URL
+          value: google.com

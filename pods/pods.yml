@@ -8,5 +8,8 @@ spec:
       image: nginx
     - name: debug
       image: centos:7
+      command:
+        - sleep
+        - "10000"
 
       

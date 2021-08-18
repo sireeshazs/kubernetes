@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod
 metadata:
-name: sample10
+ name: sample10
 spec:
-containers:
- - image: nginx
-   name: client
-   lifecycle:
-    preStop:
-     httpGet:
-     port: 8080
-     path: /shutdown
+ containers:
+   - image: nginx
+     name: client
+     lifecycle:
+       preStop:
+         httpGet:
+         port: 8080
+         path: /shutdown

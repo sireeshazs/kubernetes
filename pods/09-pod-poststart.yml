@@ -6,9 +6,4 @@ spec:
 containers:
  - image: nginx
    name: client
-  lifecycle:
-   preStop:
-    httpGet:
-    port: 8080
-    path: /shutdown
- 
+  

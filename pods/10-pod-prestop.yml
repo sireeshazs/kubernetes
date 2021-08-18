@@ -4,7 +4,7 @@ metadata:
 name: sample10
 spec:
 containers:
- - image: mynginx
+ - image: nginx
   name: client
   lifecycle:
    preStop:

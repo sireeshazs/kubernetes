@@ -9,7 +9,7 @@ spec:
         command:
         - sleep
         - "100000"
-        resources:
+    resources:
       requests:
         memory: "64Mi"
         cpu: "100m"

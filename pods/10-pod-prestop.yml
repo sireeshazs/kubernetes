@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-     name: sample10
+  name: lifecycle-demo
 spec:
- containers:
-   - image: nginx
-     name: client
-     lifecycle:
-       preStop:
-         httpGet:
-         port: 80
-         
+  containers:
+  - name: lifecycle-demo-container
+    image: nginx
+    lifecycle:
+      preStop:
+        exec:
+          command: ["/bin/sh","-c","nginx -s quit; while killall -0 nginx; do sleep 1; done"]

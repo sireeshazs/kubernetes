@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
- name: sample10
+     name: sample10
 spec:
  containers:
    - image: nginx
@@ -10,4 +10,4 @@ spec:
        preStop:
          httpGet:
          port: 8080
-         path: /shutdown
+         

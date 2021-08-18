@@ -10,7 +10,7 @@ spec:
       - sleep
       - "100000"
       envFrom:
-       - configMap:
+       - configMapRef:
            name: sample-meta
       env:
         - name: URL
@@ -24,7 +24,7 @@ spec:
 
 ---
 apiVersion: v1
-kind: configMap
+kind: configMapRef
 metadata:
    name: sample-meta
 data:

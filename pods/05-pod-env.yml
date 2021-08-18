@@ -9,7 +9,7 @@ spec:
       command:
       - sleep
       - "100000"
-      envfrom:
+      envFrom:
        - configMapRef:
            name: sample-meta
       env:

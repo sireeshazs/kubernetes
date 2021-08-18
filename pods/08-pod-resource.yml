@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: sample8
+spec:
+   containers:
+      - name: centos
+        image: centos:7
+        command:
+        - sleep
+        - "100000"
+        resources:
+      requests:
+        memory: "64Mi"
+        cpu: "100m"
+      limits:
+        memory: "128Mi"
+        cpu: "125m"

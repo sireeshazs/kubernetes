@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-   name: sample10
+name: client
 spec:
 containers:
- - image: nginx
-   name: client
+ - image: mynginx
+  name: client
   lifecycle:
    preStop:
     httpGet:

@@ -11,7 +11,7 @@ spec:
       - "100000"
       env:
         - name: URL
-          #value: google.com
+          value: google.com
           valueFrom:
            configMapKeyRef:
               key: URL

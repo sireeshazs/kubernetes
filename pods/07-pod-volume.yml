@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sample7
+spec:
+  containers:
+  - image: centos:7
+    name: centos
+    command:
+    - sleep
+    - :100000"
+    volumeMounts:
+    - mountPath: /data
+      name: test-volume
+  volumes:
+  - name: test-volume
+    awsElasticBlockStore:
+      volumeID: "vol-097fd6aaeb5d0bfc6"
+      fsType: ext4

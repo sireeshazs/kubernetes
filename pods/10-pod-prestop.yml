@@ -8,5 +8,5 @@ spec:
     image: nginx
     lifecycle:
       preStop:
-        exec:
-          command: ["/bin/sh","-c","nginx -s quit; while killall -0 nginx; do sleep 1; done"]
+            exec:
+              command: ["/bin/sh", "-c", "echo Hello from the preSop handler > /tmp/hello"]
